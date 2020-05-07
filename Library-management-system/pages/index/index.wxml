@@ -1,0 +1,22 @@
+<view class="pyg_index">
+  <!-- 搜索框开始 -->
+  <SearchInput></SearchInput>
+  <!-- 搜索框结束 -->
+  <view class="books">
+    <!-- 左侧数据 -->
+    <scroll-view scroll-y class="left_menu">
+      <view class="book_group {{index===currentIndex?'active':''}}" wx:for="{{leftMenuList}}" wx:key="*this" bindtap="handleItemTap" data-index="{{index}}">
+        {{item}}
+      </view>
+    </scroll-view>
+    <!-- 右侧数据 -->
+    <scroll-view scroll-y class="right_content">
+      <view class="books_list" wx:for="{{rightContent}}" wx:for-index="index1" wx:for-item="item1">
+        <navigator  url="/pages/books_list/index">
+          <image src="{{item1.book_image}}" mode="widthFix"></image>
+        </navigator>
+        <navigator class="books_title" url="/pages/books_list/index">{{item1.book_name}}</navigator>
+      </view>
+    </scroll-view>
+  </view>
+</view>

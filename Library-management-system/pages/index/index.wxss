@@ -1,0 +1,53 @@
+page {
+  height: 100%;
+}
+.pyg_index .books {
+  height: calc(100vh - 90rpx);
+  display: flex;
+}
+.pyg_index .books .left_menu {
+  /* 子项 高度 100% flex */
+  flex: 3;
+}
+.pyg_index .books .left_menu .book_group {
+  height: 80rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 25rpx;
+}
+.pyg_index .books .left_menu .active {
+  color: var(--themeColor);
+  border-left: 5rpx solid currentColor;
+}
+.pyg_index .books .right_content {
+  flex: 7;
+}
+.pyg_index .books .right_content .books_list{
+  display: flex;
+  border-bottom :2rpx;
+}
+.pyg_index .books .right_content .books_list navigator{
+  width: 80%;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.pyg_index .books .right_content .books_list navigator image{
+  width: 100%;
+  flex:left;
+}
+.pyg_index .books .right_content .books_list  .books_title{
+  width: 100%;
+  flex:right;
+  justify-content: center;
+  align-items: center;
+  font-size: 25rpx;
+}
+.pyg_index .books .right_content .books_list navigator books_title{
+  width: 100%;
+  flex:right;
+  justify-content: center;
+  align-items: center;
+  font-size: 25rpx;
+}
